@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  background-color: #f5f9ff;
+  align-items: center;
+  padding: 24px 44px;
+  margin-right: 48px;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.logoDot {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e90ff;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 18px;
+  padding: 8px 24px;
+  width: 280px;
+}
+
+.searchBar input {
+  border: none;
+  background: none;
+  margin-left: 8px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  color: #666;
+}
+
+.actions {
+  display: flex;
+  padding: 18px 80px;
+  align-items: center;
+  gap: 12px;
+}
+
+.addButton {
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logoSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+.scheduleCard {
+    background-color: #f5f9ff;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.scheduleCard h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3534a8;
+    margin-bottom: 16px;
+}
+
+.appt {
+    display: flex;
+    gap: 10px;
+}
+
+.dayGroup {
+    margin-bottom: 16px;
+}
+
+.dayGroup h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+}

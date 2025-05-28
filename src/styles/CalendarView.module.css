@@ -1,0 +1,121 @@
+.calendarCard {
+  background-color: #f5f9ff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendarHeader h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3534a8;
+}
+
+.navArrows {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  color: #1e90ff;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.dayHeader {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #3534a8;
+  padding: 8px 0;
+}
+
+.emptyDay {
+  background-color: transparent;
+}
+
+.day {
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #3534a8;
+  border-radius: 4px;
+}
+
+.day:hover {
+  background-color: #dee3fa;
+}
+
+.detailCard:hover {
+  background-color: #3534a8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.time {
+  padding: 2px 0px;
+  border-radius: 4px;
+  color: #3534a8;
+  font-size: 12px;
+}
+
+.appointmentDetails {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.detailCard {
+  background-color: #dee3fa;
+  padding: 12px;
+  border-radius: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.detailIcon {
+  font-size: 24px;
+}
+
+.detailCard h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3534a8;
+}
+
+.doctor {
+  font-size: 12px;
+  color: #3534a8;
+}
+
+.detailCard:hover h4,
+.detailCard:hover .doctor,
+.detailCard:hover .time {
+  color: #dee3fa;
+}
+
+@media (max-width: 480px) {
+  .appointmentDetails {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,36 @@
+.overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.leftColumn {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0;
+}
+
+.rightColumnBg {
+  background-color: #f5f9ff;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.activity {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@media (max-width: 1024px) {
+  .overview {
+    grid-template-columns: 1fr;
+  }
+
+  .leftColumn {
+    grid-template-columns: 1fr;
+  }
+}

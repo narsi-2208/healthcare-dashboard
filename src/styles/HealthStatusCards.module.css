@@ -1,0 +1,43 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background-color: #f5f9ff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cardIcon {
+  font-size: 16px;
+}
+
+.card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.date {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: 500;
+}

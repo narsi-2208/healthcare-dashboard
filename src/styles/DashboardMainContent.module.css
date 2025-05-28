@@ -1,0 +1,19 @@
+.mainContent {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(22, 26, 92);
+  margin-left: 28px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 16px;
+  }
+}

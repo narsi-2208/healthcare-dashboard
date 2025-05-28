@@ -1,0 +1,96 @@
+.anatomyCard {
+  background-color: #f5f9ff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  margin-left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anatomyContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  flex-shrink: 0;
+}
+
+.anatomyImage {
+  width: 150px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.indicators {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.indicator {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #e5f0fd;
+  padding: 4px 8px;
+  border-radius: 16px;
+  white-space: nowrap;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.heart {
+  top: 20%;
+  left: 10%;
+}
+
+.lungs {
+  top: 20%;
+  right: 10%;
+}
+
+.teeth {
+  top: 10%;
+  right: 10%;
+}
+
+.bone {
+  bottom: 20%;
+  left: 10%;
+}
+
+@media (max-width: 480px) {
+  .anatomyCard {
+    width: 250px;
+    height: 350px;
+  }
+
+  .anatomyContent {
+    height: 300px;
+  }
+
+  .anatomyImage {
+    width: 120px;
+    height: 240px;
+  }
+
+  .indicator {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
